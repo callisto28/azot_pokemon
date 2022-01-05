@@ -1,5 +1,5 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, Text } from 'react-native'
 
 interface DetailProps {
 
@@ -8,6 +8,7 @@ interface DetailProps {
 export const Detail: React.FunctionComponent<DetailProps> = (props) => {
     return (
         <View>
+            <Text>Detail</Text>
 
         </View>
     )
