@@ -1,5 +1,5 @@
 import React from 'react';
-import { createNativeStackNavigator } from 'react-native-screens/native-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Pokemon } from '../screen/Pokemon';
 import { Detail } from '../screen/Detail';
 
@@ -24,7 +24,7 @@ export const Navigation = () => {
                 <Stack.Screen name="Pokemon" component={Pokemon}
                     options={{
                         title: 'Pokemon',
-                        // headerTitleAlign: 'center',
+                        headerTitleAlign: 'center',
                         headerTintColor: "#FFF",
                         headerStyle: {
                             backgroundColor: "#000",
@@ -34,8 +34,9 @@ export const Navigation = () => {
                 <Stack.Screen name="Detail"
                     component={Detail}
                     options={{
-                        title: 'Detail',
-                        // animation: "slide_from_right",
+                        title: 'Pokemon',
+                        headerTitleAlign: 'center',
+                        animation: "slide_from_right",
                         headerTintColor: "#FFF",
                         headerStyle: {
                             backgroundColor: "#000",
