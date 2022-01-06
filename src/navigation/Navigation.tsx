@@ -5,18 +5,15 @@ import { Detail } from '../screen/Detail';
 
 export type RouteParams = {
   Pokemon: {
+    id: string;
     name: string;
+    url: string;
   };
+
   Detail: {
-    name:
-      | string
-      | null
-      | undefined
-      | React.Key
-      | React.ReactChild
-      | React.ReactFragment
-      | React.ReactPortal;
-  };
+    id: string;
+    name: string;
+  }
 };
 
 const Stack = createNativeStackNavigator<RouteParams>();

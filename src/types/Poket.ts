@@ -1,21 +1,13 @@
-export type Poketype = {
+export type Poket = {
   id: string | null | undefined;
   name: string;
   image: string;
   species: {
     name: string;
   };
-
   results: {
-    map: {
-      pokemon: {
-        url: string;
-        name: string;
-      };
-      index: number;
-    };
+    name: string;
   };
-
   sprites: {
     front_shiny: string;
     front_default: string;
