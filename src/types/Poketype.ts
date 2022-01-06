@@ -5,6 +5,9 @@ export type Poketype = {
   species: {
     name: string;
   };
+  results: {
+    name: string;
+  };
   sprites: {
     front_shiny: string;
     front_default: string;

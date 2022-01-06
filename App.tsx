@@ -8,7 +8,6 @@ import { Store } from './src/store';
 // import file navigation
 import { Navigation } from './src/navigation/Navigation';
 
-
 export default function App() {
   return (
     <Provider store={Store}>
@@ -19,5 +18,3 @@ export default function App() {
     </Provider>
   );
 }
-
-
