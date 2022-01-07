@@ -1,3 +1,6 @@
+/**
+ * Call the pokemon api and get all pokemon
+ */
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { Poketype } from '../types/Poketype';
 import { Poket } from '../types/Poket';

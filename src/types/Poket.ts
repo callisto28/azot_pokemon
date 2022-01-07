@@ -21,7 +21,7 @@ export type Poket = {
         name: string;
         image: string;
       };
-      error: any;
+      error: unknown;
     };
   };
 };

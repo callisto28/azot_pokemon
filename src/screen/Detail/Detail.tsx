@@ -15,28 +15,22 @@ import {
 import {
   RouteProp, useRoute
 } from '@react-navigation/native';
-
 /**
  * Expo Google Fonts
  */
 import AppLoading from 'expo-app-loading';
 import { useFonts, SquadaOne_400Regular } from '@expo-google-fonts/squada-one';
-
 /**
  * import components
  */
 import { RouteParams } from '../../navigation/Navigation';
 import { useGetPokemonQuery } from '../../service/Getpokemon';
-
-
 /**
  * import types and interfaces
  */
 interface DetailProps {
   id: string;
 }
-
-
 /**
  *  export component
  */
@@ -49,7 +43,6 @@ export const Detail: React.FunctionComponent<DetailProps> = () => {
   const buttonClickedHandler = () => {
     avatar == 'front' ? setAvatar('back') : setAvatar('front');
   };
-
   /**
    * state for activity indicator
    */
@@ -59,7 +52,6 @@ export const Detail: React.FunctionComponent<DetailProps> = () => {
       setIsLoad(false);
     }, 1000);
   }, []);
-
   /**
   * use fonts
   */
@@ -72,7 +64,6 @@ export const Detail: React.FunctionComponent<DetailProps> = () => {
   if (!fontsLoaded) {
     return <AppLoading />;
   } else {
-
     /**
     * return component
     */
@@ -127,11 +118,9 @@ export const Detail: React.FunctionComponent<DetailProps> = () => {
     );
   }
 };
-
 /**
  * styles for the component
  */
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -170,8 +159,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   roundButton1: {
-    width: 20,
-    height: 20,
+    width: 50,
+    height: 50,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 10,

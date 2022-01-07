@@ -11,15 +11,16 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
+/**
+ * Expo Google Fonts
+ */
 import AppLoading from 'expo-app-loading';
 import { useFonts, SquadaOne_400Regular } from '@expo-google-fonts/squada-one';
-
 /**
  * import components
  */
 import { RouteParams } from '../../navigation/Navigation';
 import { useGetPokemonByNameQuery } from '../../service/Getpokemon';
-
 /**
  * import types and interfaces
  */
@@ -35,7 +36,6 @@ interface PokemonProps {
     name: string;
   }
 }
-
 /**
  *  export component
  */
@@ -43,7 +43,6 @@ export const Pokemon: React.FunctionComponent<PokemonProps> = () => {
 
   const navigation = useNavigation<NativeStackNavigationProp<RouteParams>>();
   const { data, error, isLoading } = useGetPokemonByNameQuery('');
-
   /**
   * use fonts
   */
@@ -105,8 +104,6 @@ export const Pokemon: React.FunctionComponent<PokemonProps> = () => {
     );
   }
 };
-
-
 /**
  * styles for the component
  */
